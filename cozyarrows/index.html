@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cozy Arrows – Google Play</title>
+<meta name="description" content="Cozy arrow escape puzzles">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cozy Arrows – Google Play">
+<meta property="og:description" content="Cozy arrow escape puzzles">
+<meta property="og:image" content="https://puzzlepawgames.github.io/cozyarrows/icon.png">
+<meta property="og:url" content="https://puzzlepawgames.github.io/cozyarrows/">
+<style>
+  html, body { margin: 0; padding: 0; width: 100%; }
+  body {
+    background: #FFF8EF;
+    color: #2B2B2B;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 420px;
+    min-width: 0;
+    padding: 48px 24px 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+  }
+  .icon {
+    display: block;
+    width: 128px;
+    height: 128px;
+    border-radius: 28px;
+  }
+  h1 { font-size: 28px; font-weight: 700; margin: 20px 0 8px; }
+  .tagline { font-size: 17px; margin: 0 0 16px; }
+  .badge {
+    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #E6F4EC;
+    color: #1F6B3E;
+    margin: 0 0 28px;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 360px;
+    height: 56px;
+    border-radius: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .btn-primary { background: #2E9E5B; }
+  .btn-secondary { background: #44515E; }
+  .help { font-size: 14px; margin: 20px 0 6px; }
+  .plain { font-size: 14px; margin: 0; overflow-wrap: anywhere; }
+  .plain a { color: #2B2B2B; }
+  footer { padding: 24px; font-size: 14px; text-align: center; }
+  footer a { color: #2B2B2B; }
+</style>
+</head>
+<body>
+<main>
+  <img class="icon" src="icon.png" width="128" height="128" alt="Cozy Arrows icon">
+  <h1>Cozy Arrows</h1>
+  <p class="tagline">Cozy arrow escape puzzles</p>
+  <p class="badge">Now in closed testing on Google Play</p>
+  <a id="btn-test" class="btn btn-primary" href="intent://play.google.com/apps/testing/com.puzzlepawgames.cozyarrows#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fapps%2Ftesting%2Fcom.puzzlepawgames.cozyarrows;end">Join the test in Chrome</a>
+  <a id="btn-store" class="btn btn-secondary" href="intent://details?id=com.puzzlepawgames.cozyarrows#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.puzzlepawgames.cozyarrows;end">Open in Google Play</a>
+  <p class="help">Button does nothing? Tap ⋯ (top right) → Open in external browser.</p>
+  <p class="plain"><a href="https://play.google.com/apps/testing/com.puzzlepawgames.cozyarrows">play.google.com/apps/testing/com.puzzlepawgames.cozyarrows</a></p>
+</main>
+<footer>
+  <a href="privacy.html">Privacy policy</a>
+</footer>
+<script>
+  // Non-Android browsers: plain https links instead of intent:// links. No redirect.
+  if (!/Android/i.test(navigator.userAgent)) {
+    document.getElementById('btn-test').href = 'https://play.google.com/apps/testing/com.puzzlepawgames.cozyarrows';
+    document.getElementById('btn-store').href = 'https://play.google.com/store/apps/details?id=com.puzzlepawgames.cozyarrows';
+  }
+</script>
+</body>
+</html>
