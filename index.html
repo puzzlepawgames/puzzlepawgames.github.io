@@ -1,17 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Puzzle Paw Games</title>
+<meta name="description" content="Cozy indie puzzle games">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Puzzle Paw Games">
+<meta property="og:description" content="Cozy indie puzzle games">
+<meta property="og:url" content="https://puzzlepawgames.github.io/">
+<style>
+  html, body { margin: 0; padding: 0; width: 100%; }
+  body {
+    background: #FFF8EF;
+    color: #2B2B2B;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 420px;
+    min-width: 0;
+    padding: 48px 24px 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+  }
+  h1 { font-size: 28px; font-weight: 700; margin: 0 0 8px; }
+  .tagline { font-size: 17px; margin: 0 0 28px; }
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 128px;
+    padding: 16px;
+    margin: 0 0 16px;
+    background: #FFFFFF;
+    border: 1px solid #EADFCF;
+    border-radius: 16px;
+    color: #2B2B2B;
+    text-decoration: none;
+    text-align: left;
+  }
+  .card-icon {
+    display: block;
+    flex: 0 0 96px;
+    width: 96px;
+    height: 96px;
+    border-radius: 22px;
+  }
+  .card-name { display: block; font-size: 18px; font-weight: 700; margin: 0 0 6px; }
+  .card-status { display: block; font-size: 14px; color: #1F6B3E; }
+  .card-status-muted { color: #44515E; }
+  footer {
+    padding: 24px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.8;
+  }
+  footer a { color: #2B2B2B; }
+</style>
 </head>
 <body>
-<h1>Puzzle Paw Games</h1>
-<p>Indie mobile games.</p>
-<ul>
-<li><a href="https://play.google.com/store/apps/details?id=com.pawpuzzle.game">Paw Puzzle on Google Play</a></li>
-<li><a href="https://sites.google.com/view/paw-puzzle">Privacy policy</a></li>
-</ul>
-<p>Contact: puzzlepawgames@gmail.com</p>
+<main>
+  <h1>Puzzle Paw Games</h1>
+  <p class="tagline">Cozy indie puzzle games</p>
+  <a class="card" href="pawpuzzle/">
+    <img class="card-icon" src="pawpuzzle/icon.png" width="96" height="96" alt="Paw Puzzle icon">
+    <span>
+      <span class="card-name">Paw Puzzle</span>
+      <span class="card-status">Available on Google Play</span>
+    </span>
+  </a>
+  <a class="card" href="cozyarrows/">
+    <img class="card-icon" src="cozyarrows/icon.png" width="96" height="96" alt="Cozy Arrows icon">
+    <span>
+      <span class="card-name">Cozy Arrows</span>
+      <span class="card-status card-status-muted">Closed testing – join now</span>
+    </span>
+  </a>
+</main>
+<footer>
+  <div>Contact: <a href="mailto:puzzlepawgames@gmail.com">puzzlepawgames@gmail.com</a></div>
+  <div><a href="https://play.google.com/store/apps/details?id=com.pawpuzzle.game">Paw Puzzle on Google Play</a></div>
+  <div><a href="https://sites.google.com/view/paw-puzzle">Paw Puzzle privacy policy</a></div>
+  <div><a href="cozyarrows/privacy.html">Cozy Arrows privacy policy</a></div>
+</footer>
 </body>
 </html>
